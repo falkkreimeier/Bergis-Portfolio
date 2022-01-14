@@ -1,9 +1,16 @@
 import styled from "styled-components/macro";
-import profile from "./Assets/Sebastian02.jpg";
+import profile from "../Assets/Sebastian02.jpg";
 
 function Vita() {
   return (
     <Wrapper>
+      <QuoteContainer>
+        <Quotes>"</Quotes>
+        <Quote>
+          Eine Kamera schafft Distanz zu den Menschen, die sie betrachtet. Der
+          Mensch dahinter hat zur Aufgabe diese aufzulösen.
+        </Quote>
+      </QuoteContainer>
       <Image src={profile} alt="" />
       <Text>
         <b>Sebastian Bergfeld</b>(* 1979 in Haan) ist freier Dokumentarfilmer
@@ -28,11 +35,37 @@ const Wrapper = styled.section`
 
 const Image = styled.img`
   width: var(--mobile-width);
+  margin-top: -130px;
 `;
 
 const Text = styled.p`
+  font-size: 1.2rem;
   color: black;
   padding: 10px;
+`;
+
+const QuoteContainer = styled.div`
+  position: relative;
+  bottom: 70px;
+  left: 85px;
+  height: 55px;
+  width: 295px;
+  background-color: black;
+`;
+
+const Quotes = styled.p`
+  position: relative;
+  bottom: 15px;
+  padding-left: 5px;
+  font-size: 4rem;
+  color: white;
+`;
+
+const Quote = styled.p`
+  margin-top: -155px;
+  padding-left: 35px;
+  font-size: 0.7rem;
+  color: white;
 `;
 
 export default Vita;

@@ -4,8 +4,10 @@ const GlobalStyles = createGlobalStyle`
 :root {
 --mobile-width: 375px;
 --app-background: yellow;
---mobile-height: 100vh;
---component-color: #efebdc
+--mobile-height: 100%;
+--component-color: #efebdc;
+--main-font: 
+--headline-font:
 ;
 }
 
