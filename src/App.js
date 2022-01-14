@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import Header from "./Header";
+import Footer from "./Footer";
+import Logo from "./Logo";
+import Vita from "./Vita";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Header />
+
+      <Main>
+        <Routes>
+          <Route path="/" element={<Vita />} />
+        </Routes>
+      </Main>
+
+      <Footer />
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.section`
+  margin: 0 auto;
+  background-color: var(--app-background);
+  width: var(--mobile-width);
+  height: var(--mobile-height);
+`;
+
+const Main = styled.main``;
 
 export default App;
