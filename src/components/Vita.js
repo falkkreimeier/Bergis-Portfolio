@@ -4,14 +4,15 @@ import profile from "../Assets/Sebastian02.jpg";
 function Vita() {
   return (
     <Wrapper>
+      <ImageContainer>
+        <Image src={profile} alt="" />
+      </ImageContainer>
       <QuoteContainer>
-        <Quotes>"</Quotes>
         <Quote>
           Eine Kamera schafft Distanz zu den Menschen, die sie betrachtet. Der
           Mensch dahinter hat zur Aufgabe diese aufzulösen.
         </Quote>
       </QuoteContainer>
-      <Image src={profile} alt="" />
       <Text>
         <b>Sebastian Bergfeld</b>(* 1979 in Haan) ist freier Dokumentarfilmer
         mit dem Schwerpunkt Kamera und Regie. Von 2005 bis 2012 studierte er an
@@ -30,40 +31,39 @@ function Vita() {
 }
 
 const Wrapper = styled.section`
-  background-color: var(--component-color);
+  background-color: var(--secondary-color3);
+`;
+
+const ImageContainer = styled.div`
+  background-color: var(--secondary-color3);
 `;
 
 const Image = styled.img`
-  width: var(--mobile-width);
-  margin-top: -130px;
+  width: 350px;
+  margin-left: 13px;
 `;
 
 const Text = styled.p`
   font-size: 1.2rem;
+  font-family: var(--main-font)
   color: black;
   padding: 10px;
+  background-color: var(--secondary-color3);
+  margin: -45px 0 0 13px;
 `;
 
 const QuoteContainer = styled.div`
   position: relative;
-  bottom: 70px;
-  left: 85px;
-  height: 55px;
-  width: 295px;
-  background-color: black;
-`;
-
-const Quotes = styled.p`
-  position: relative;
-  bottom: 15px;
-  padding-left: 5px;
-  font-size: 4rem;
-  color: white;
+  bottom: 245px;
+  left: 28px;
+  background-color: var(--signal-color);
+  height: 45px;
+  width: 335px;
 `;
 
 const Quote = styled.p`
-  margin-top: -155px;
-  padding-left: 35px;
+  font-family: var(--main-font);
+  padding: 5px;
   font-size: 0.7rem;
   color: white;
 `;

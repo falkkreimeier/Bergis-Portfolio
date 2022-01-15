@@ -37,7 +37,7 @@ function App() {
 
 const Wrapper = styled.section`
   margin: 0px auto;
-  background-color: var(--app-background);
+  background-color: var(--secondary-color3);
   width: var(--mobile-width);
   height: var(--mobile-height);
 `;
