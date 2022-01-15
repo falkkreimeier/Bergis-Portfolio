@@ -6,12 +6,12 @@ const GlobalStyles = createGlobalStyle`
 --app-background: yellow;
 --mobile-height: 100%;
 --component-color: #efebdc;
---primary-color: #F2F2F2;
---secondary-color3: #65858C;
---secondary-color4: #012E40;
---signal-color:  	#4d2847;
+--primary-color: #0F1226;
+--secondary-color1: #426A8C;
+--secondary-color2: #75B2BF;
+--signal-color1: #69358C;
+--signal-color2: #272559;
 --body-color: #efebdc;
-
 --main-font: 'Roboto', sans-serif;
 --hl-font: 'Palanquin Dark', sans-serif;
 ;

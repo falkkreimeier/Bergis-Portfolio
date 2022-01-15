@@ -7,10 +7,17 @@ import Datenschutz from "./components/Datenschutz";
 import Documentary from "./components/Documentary";
 import Camera from "./components/Camera";
 import Mediaeducation from "./components/Mediaeducation";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import data from "./data.json";
+import { useEffect } from "react";
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <Wrapper>
       <Header />
@@ -37,7 +44,7 @@ function App() {
 
 const Wrapper = styled.section`
   margin: 0px auto;
-  background-color: var(--secondary-color3);
+  background-color: var(--secondary-color1);
   width: var(--mobile-width);
   height: var(--mobile-height);
 `;

@@ -22,7 +22,7 @@ const FooterEl = styled.footer`
 
 const Wrapper = styled.section`
   width: var(--mobile-width);
-  background-color: var(--secondary-color4);
+  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
