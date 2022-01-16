@@ -6,10 +6,11 @@ import Impressum from "./components/Impressum";
 import Datenschutz from "./components/Datenschutz";
 import Documentary from "./components/Documentary";
 import Camera from "./components/Camera";
+import Menü from "./components/Menü";
 import Mediaeducation from "./components/Mediaeducation";
 import { Routes, Route, useLocation } from "react-router-dom";
 import data from "./data.json";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const { pathname } = useLocation();
@@ -18,12 +19,29 @@ function App() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  const [showMenü, setShowMenü] = useState(false);
+  function MenüButtonClick() {
+    setShowMenü(!showMenü);
+  }
+
+  function NaviButtonClick() {
+    setShowMenü(false);
+    console.log("clicked");
+  }
+
   return (
     <Wrapper>
-      <Header />
+      <Header showMenü={showMenü} onMenüButtonClick={MenüButtonClick} />
       <Main>
         <Routes>
-          <Route path="/" element={<Vita />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Vita />
+              </>
+            }
+          />
           <Route
             path="/dokumentarfilm"
             element={data.poster.map((poster) => (
@@ -37,7 +55,7 @@ function App() {
         </Routes>
       </Main>
 
-      <Footer />
+      <Footer onNaviButtonClick={NaviButtonClick} />
     </Wrapper>
   );
 }

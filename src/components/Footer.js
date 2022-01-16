@@ -1,12 +1,16 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-function Footer() {
+function Footer({ onNaviButtonClick }) {
   return (
     <FooterEl>
       <Wrapper>
-        <Navigation to="/impressum">IMPRESSUM</Navigation>
-        <Navigation to="/datenschutz">DATENSCHUTZ</Navigation>
+        <Navigation onClick={onNaviButtonClick} to="/impressum">
+          IMPRESSUM
+        </Navigation>
+        <Navigation onClick={onNaviButtonClick} to="/datenschutz">
+          DATENSCHUTZ
+        </Navigation>
       </Wrapper>
     </FooterEl>
   );
@@ -36,7 +40,7 @@ const Navigation = styled(NavLink)`
   font-family: var(--hl-font);
   font-size: 0.8rem;
   margin: 5px;
-  color: white;
+  color: black;
   &:last-child {
     border: none;
   }

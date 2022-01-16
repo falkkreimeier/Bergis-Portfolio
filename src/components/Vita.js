@@ -14,10 +14,9 @@ function Vita() {
         </Quote>
       </QuoteContainer>
       <Text>
-        <Headline>Sebastian Bergfeld</Headline>
-        (* 1979 in Haan) ist freier Dokumentarfilmer mit dem Schwerpunkt Kamera
-        und Regie. Von 2005 bis 2012 studierte er an der FH Düsseldorf
-        Sozialpädagogik und erlangte das Diplom mit seiner filmischen
+        Sebastian Bergfeld(* 1979 in Haan) ist freier Dokumentarfilmer mit dem
+        Schwerpunkt Kamera und Regie. Von 2005 bis 2012 studierte er an der FH
+        Düsseldorf Sozialpädagogik und erlangte das Diplom mit seiner filmischen
         Abschlussarbeit über Geschwister von Menschen mit Behinderung. Seit 2009
         arbeitet Sebastian Bergfeld als freier Mitarbeiter beim Medienprojekt
         Wuppertal e.V. in der Entwicklung und Realisierung von Dokumentarfilmen

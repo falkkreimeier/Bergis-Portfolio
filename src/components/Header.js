@@ -1,22 +1,23 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { BiMenu as MenüImg } from "react-icons/bi";
+import { IconContext } from "react-icons";
+import Menü from "./Menü";
 
-function Header() {
+function Header({ showMenü, onMenüButtonClick }) {
   return (
     <HeaderEl>
       <Wrapper>
-        <NavigationLink to="/" activeclassname="active">
-          VITA
-        </NavigationLink>
-        <NavigationLink to="/dokumentarfilm" activeclassname="active">
-          DOKUMENTARFILM
-        </NavigationLink>
-        <NavigationLink to="/medienpaedgogik" activeclassname="active">
-          MEDIENPÄDAGOGIK
-        </NavigationLink>
-        <NavigationLink to="/kamera" activeclassname="active">
-          KAMERA
-        </NavigationLink>
+        <Headline>Sebastian Bergfeld</Headline>
+        <IconPosition>
+          <IconContext.Provider
+            value={{
+              size: "30px",
+            }}
+          >
+            <MenüImg onClick={onMenüButtonClick} />
+          </IconContext.Provider>
+        </IconPosition>
+        {showMenü ? <Menü onMenüButtonClick={onMenüButtonClick} /> : ""}
       </Wrapper>
     </HeaderEl>
   );
@@ -38,24 +39,20 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   margin: 5px auto;
-  height: 30px;
+  height: 40px;
 `;
 
-const NavigationLink = styled(NavLink)`
-  border-right: 1px solid black;
-  padding-right: 10px;
-  margin: 3px;
-  text-decoration: none;
-  font-family: var(--hl-font)
-  font-weight: 400;
-  font-size: 0.7rem;
-  color: white;
-  &.active {
-    text-decoration: underline;
-  }
-  &:last-child {
-    border: none;
-  }
+const Headline = styled.h2`
+  font-family: var(--hl-font);
+  position: relative;
+  right: 45px;
+  bottom: 2px;
+`;
+
+const IconPosition = styled.div`
+  position: relative;
+  left: 50px;
+  top: 2px;
 `;
 
 export default Header;
