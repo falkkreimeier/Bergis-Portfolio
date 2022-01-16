@@ -39,8 +39,6 @@ const Image = styled.img`
   border-radius: 5px;
 `;
 
-const Quotes = styled.p``;
-
 const Text = styled.p`
   font-size: 1.2rem;
   font-family: var(--main-font);
