@@ -39,7 +39,7 @@ function Menü({ onMenüButtonClick }) {
 const Wrapper = styled.section`
   background-color: var(--primary-color);
   position: absolute;
-  left: 240px;
+  left: 220px;
   top: 50px;
   display: flex;
   flex-direction: column;

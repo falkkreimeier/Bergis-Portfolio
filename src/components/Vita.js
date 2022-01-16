@@ -67,7 +67,7 @@ const Quote = styled.p`
   font-family: var(--main-font);
   padding: 5px;
   font-size: 0.7rem;
-  color: white;
+  color: black;
 `;
 
 export default Vita;
