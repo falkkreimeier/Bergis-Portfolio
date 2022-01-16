@@ -7,12 +7,6 @@ function Vita() {
       <ImageContainer>
         <Image src={profile} alt="" />
       </ImageContainer>
-      <QuoteContainer>
-        <Quote>
-          Eine Kamera schafft Distanz zu den Menschen, die sie betrachtet. Der
-          Mensch dahinter hat zur Aufgabe diese aufzulösen.
-        </Quote>
-      </QuoteContainer>
       <Text>
         Sebastian Bergfeld(* 1979 in Haan) ist freier Dokumentarfilmer mit dem
         Schwerpunkt Kamera und Regie. Von 2005 bis 2012 studierte er an der FH
@@ -45,29 +39,15 @@ const Image = styled.img`
   border-radius: 5px;
 `;
 
+const Quotes = styled.p``;
+
 const Text = styled.p`
   font-size: 1.2rem;
   font-family: var(--main-font);
   color: black;
   padding: 10px;
   background-color: var(--secondary-color3);
-  margin: -45px 0 0 13px;
-`;
-
-const QuoteContainer = styled.div`
-  position: relative;
-  bottom: 242px;
-  left: 28px;
-  background-color: var(--signal-color1);
-  height: 45px;
-  width: 335px;
-`;
-
-const Quote = styled.p`
-  font-family: var(--main-font);
-  padding: 5px;
-  font-size: 0.7rem;
-  color: black;
+  margin-left: 13px;
 `;
 
 export default Vita;

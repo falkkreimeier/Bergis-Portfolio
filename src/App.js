@@ -6,6 +6,7 @@ import Impressum from "./components/Impressum";
 import Datenschutz from "./components/Datenschutz";
 import Documentary from "./components/Documentary";
 import Camera from "./components/Camera";
+import Quote from "./components/Quote";
 import Mediaeducation from "./components/Mediaeducation";
 import { Routes, Route, useLocation } from "react-router-dom";
 import data from "./data.json";
@@ -37,19 +38,17 @@ function App() {
             path="/"
             element={
               <>
-                <Vita />
+                <Quote />
+                {data.poster.map((poster) => (
+                  <Documentary image={poster.image} key={poster.id} />
+                ))}
               </>
             }
           />
-          <Route
-            path="/dokumentarfilm"
-            element={data.poster.map((poster) => (
-              <Documentary image={poster.image} key={poster.id} />
-            ))}
-          />
-          <Route path="/impressum" element={<Impressum />} />
           <Route path="/medienpaedgogik" element={<Mediaeducation />} />
           <Route path="/kamera" element={<Camera />} />
+          <Route path="/sebastianbergfeld" element={<Vita />} />
+          <Route path="/impressum" element={<Impressum />} />s
           <Route path="/datenschutz" element={<Datenschutz />} />
         </Routes>
       </Main>

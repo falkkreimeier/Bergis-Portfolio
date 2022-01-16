@@ -4,43 +4,49 @@ import { NavLink } from "react-router-dom";
 function Menü({ onMenüButtonClick }) {
   return (
     <Wrapper>
+      <Text>Inhaltsverzeichnis</Text>
       <NavigationLink
         onClick={onMenüButtonClick}
         to="/"
         activeclassname="active"
       >
-        VITA
-      </NavigationLink>
-      <NavigationLink
-        onClick={onMenüButtonClick}
-        to="/dokumentarfilm"
-        activeclassname="active"
-      >
-        DOKUMENTARFILM
+        DOKUMENTARFILMER
       </NavigationLink>
       <NavigationLink
         onClick={onMenüButtonClick}
         to="/medienpaedgogik"
         activeclassname="active"
       >
-        MEDIENPÄDAGOGIK
+        MEDIENPÄDAGOGE
       </NavigationLink>
       <NavigationLink
         onClick={onMenüButtonClick}
         to="/kamera"
         activeclassname="active"
       >
-        KAMERA
+        KAMERAMANN
+      </NavigationLink>
+      <NavigationLink
+        onClick={onMenüButtonClick}
+        to="/sebastianbergfeld"
+        activeclassname="active"
+      >
+        SEBASTIAN BERGFELD
       </NavigationLink>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.section`
+  border: 2px solid white;
+  border-radius: 20px 0 0 20px;
   background-color: var(--primary-color);
-  position: absolute;
-  left: 220px;
-  top: 50px;
+  padding: 10px;
+  position: relative;
+  width: 220px;
+  height: 250px;
+  left: 77px;
+  top: 150px;
   display: flex;
   flex-direction: column;
   z-index: 30;
@@ -59,9 +65,15 @@ const Wrapper = styled.section`
   }
 `;
 
+const Text = styled.h2`
+  font-family: var(--hl-font);
+  font-size: 1.2rem;
+  margin: 0;
+`;
+
 const NavigationLink = styled(NavLink)`
   padding-right: 10px;
-  margin: 3px;
+  margin-top: 20px;
   text-decoration: none;
   font-family: var(--hl-font)
   font-weight: 400;

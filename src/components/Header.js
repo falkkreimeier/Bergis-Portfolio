@@ -7,7 +7,21 @@ function Header({ showMenü, onMenüButtonClick }) {
   return (
     <HeaderEl>
       <Wrapper>
-        <Headline>Sebastian Bergfeld</Headline>
+        {(() => {
+          if (window.location.pathname === "/") {
+            return <Headline>Dokumentarfilmer</Headline>;
+          } else if (window.location.pathname === "/medienpaedgogik") {
+            return <Headline>Medienpädgoge</Headline>;
+          } else if (window.location.pathname === "/kamera") {
+            return <Headline>Kameramann</Headline>;
+          } else if (window.location.pathname === "/datenschutz") {
+            return <Headline>Datenschutz</Headline>;
+          } else if (window.location.pathname === "/impressum") {
+            return <Headline>Impressum</Headline>;
+          } else {
+            return <Headline>Sebastian Bergfeld</Headline>;
+          }
+        })()}
         <IconPosition>
           <IconContext.Provider
             value={{
@@ -44,15 +58,14 @@ const Wrapper = styled.section`
 
 const Headline = styled.h2`
   font-family: var(--hl-font);
-  position: relative;
-  right: 45px;
-  bottom: 2px;
+  font-weight: 700;
+  position: fixed;
 `;
 
 const IconPosition = styled.div`
-  position: relative;
-  left: 50px;
-  top: 2px;
+  left: 80%;
+  top: 10px;
+  position: fixed;
 `;
 
 export default Header;

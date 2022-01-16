@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 function Documentary(props) {
   return (
     <Wrapper>
-      <Image src={props.image} alt="Höh" />
+      <Image src={props.image} alt="" />
     </Wrapper>
   );
 }
