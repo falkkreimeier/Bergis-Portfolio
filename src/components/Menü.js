@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Menü({ onMenüButtonClick }) {
   return (
     <Wrapper>
-      <Text>Inhaltsverzeichnis</Text>
+      <Text>Inhalt</Text>
       <NavigationLink
         onClick={onMenüButtonClick}
         to="/"
@@ -38,7 +38,6 @@ function Menü({ onMenüButtonClick }) {
 }
 
 const Wrapper = styled.section`
-  border: 2px solid white;
   border-radius: 20px 0 0 20px;
   background-color: var(--primary-color);
   padding: 10px;
@@ -46,7 +45,7 @@ const Wrapper = styled.section`
   width: 220px;
   height: 250px;
   left: 155px;
-  bottom: 45px;
+  bottom: 38px;
   display: flex;
   flex-direction: column;
   z-index: 30;

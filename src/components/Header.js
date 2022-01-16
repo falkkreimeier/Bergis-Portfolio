@@ -11,7 +11,7 @@ function Header({ showMenü, onMenüButtonClick }) {
           if (window.location.pathname === "/") {
             return <Headline>Dokumentarfilmer</Headline>;
           } else if (window.location.pathname === "/medienpaedagoge") {
-            return <Headline>Medienpädgoge</Headline>;
+            return <Headline>Medienpädagoge</Headline>;
           } else if (window.location.pathname === "/kamera") {
             return <Headline>Kameramann</Headline>;
           } else if (window.location.pathname === "/datenschutz") {
@@ -50,19 +50,19 @@ const Wrapper = styled.section`
   width: var(--mobile-width);
   background-color: var(--primary-color);
   margin: 5px auto;
-  height: 40px;
+  height: 50px;
 `;
 
 const Headline = styled.h2`
   font-family: var(--hl-font);
-  padding-top: 8px;
+  padding-top: 12px;
   font-weight: 700;
   text-align: center;
 `;
 
 const IconPosition = styled.div`
-  left: 320px;
-  bottom: 48px;
+  left: 325px;
+  bottom: 49px;
   position: relative;
 `;
 

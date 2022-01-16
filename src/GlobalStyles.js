@@ -14,7 +14,6 @@ const GlobalStyles = createGlobalStyle`
 --hl-font: 'Roboto', sans-serif;
 --main-font: 'Roboto', sans-serif;
 
-;
 }
 
 html {

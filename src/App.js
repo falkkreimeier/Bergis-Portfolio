@@ -66,7 +66,7 @@ const Wrapper = styled.section`
 `;
 
 const Main = styled.main`
-  padding: 65px 0;
+  padding: 85px 0;
   overflow: scroll;
 `;
 

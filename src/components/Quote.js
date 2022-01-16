@@ -1,27 +1,27 @@
 import styled from "styled-components/macro";
+import QuoteImg from "../Assets/Quote.jpg";
 
 function Quote() {
   return (
     <Wrapper>
-      "
-      <Headline>
+      <Image src={QuoteImg} alt="" />
+      {/* <Headline>
         Eine Kamera schafft Distanz zu den Menschen, die sie betrachtet. Der
         Mensch dahinter hat zur Aufgabe diese aufzulösen.
-      </Headline>
+      </Headline> */}
     </Wrapper>
   );
 }
 
 const Wrapper = styled.section`
   background-color: var(--tertiary-color);
-  padding: 0 25px 0 25px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 `;
-
-const Headline = styled.p`
-  font-family: var(--main-font);
-  padding: 5px;
-  font-size: 1rem;
-  color: black;
+const Image = styled.img`
+  height: 200px;
 `;
 
 export default Quote;
