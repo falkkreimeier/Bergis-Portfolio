@@ -17,11 +17,6 @@ const Wrapper = styled.section`
   padding: 0 25px 0 25px;
 `;
 
-const Quotes = styled.p`
-  display: inline;
-  font-size: 2rem;
-`;
-
 const Headline = styled.p`
   font-family: var(--main-font);
   padding: 5px;
