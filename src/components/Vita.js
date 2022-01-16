@@ -45,12 +45,6 @@ const Image = styled.img`
   border-radius: 5px;
 `;
 
-const Headline = styled.h3`
-  display: inline;
-  font-family: var(--hl-font);
-  font-size: 1.2rem;
-`;
-
 const Text = styled.p`
   font-size: 1.2rem;
   font-family: var(--main-font);

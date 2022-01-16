@@ -6,7 +6,6 @@ import Impressum from "./components/Impressum";
 import Datenschutz from "./components/Datenschutz";
 import Documentary from "./components/Documentary";
 import Camera from "./components/Camera";
-import Menü from "./components/Menü";
 import Mediaeducation from "./components/Mediaeducation";
 import { Routes, Route, useLocation } from "react-router-dom";
 import data from "./data.json";
