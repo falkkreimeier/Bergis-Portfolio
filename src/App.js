@@ -45,7 +45,7 @@ function App() {
               </>
             }
           />
-          <Route path="/medienpaedgogik" element={<Mediaeducation />} />
+          <Route path="/medienpaedagoge" element={<Mediaeducation />} />
           <Route path="/kamera" element={<Camera />} />
           <Route path="/sebastianbergfeld" element={<Vita />} />
           <Route path="/impressum" element={<Impressum />} />s
@@ -66,8 +66,7 @@ const Wrapper = styled.section`
 `;
 
 const Main = styled.main`
-  margin: 0 auto;
-  padding: 53px 0;
+  padding: 65px 0;
   overflow: scroll;
 `;
 

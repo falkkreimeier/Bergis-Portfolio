@@ -14,7 +14,7 @@ function Menü({ onMenüButtonClick }) {
       </NavigationLink>
       <NavigationLink
         onClick={onMenüButtonClick}
-        to="/medienpaedgogik"
+        to="/medienpaedagoge"
         activeclassname="active"
       >
         MEDIENPÄDAGOGE
@@ -45,8 +45,8 @@ const Wrapper = styled.section`
   position: relative;
   width: 220px;
   height: 250px;
-  left: 77px;
-  top: 150px;
+  left: 155px;
+  bottom: 45px;
   display: flex;
   flex-direction: column;
   z-index: 30;
