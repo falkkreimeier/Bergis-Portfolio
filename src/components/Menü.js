@@ -57,7 +57,7 @@ const Text = styled.h2`
   margin-bottom: 10px;
 `;
 
-const NavigationLink = styled(NavLink)``
+const NavigationLink = styled(NavLink)`
   text-decoration: none;
   font-family: var(--hl-font)
   font-weight: 400;
