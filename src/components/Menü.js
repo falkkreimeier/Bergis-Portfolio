@@ -50,10 +50,10 @@ function Menü({ onMenüButtonClick }) {
 const Wrapper = styled.section`
   border-radius: 0.5rem 0 0 0.5rem;
   background-color: var(--primary-color);
-  padding: 10px 30px;
+  padding: 20px 15px;
   position: relative;
   width: 220px;
-  height: 230px;
+  height: 228px;
   left: 155px;
   bottom: 38px;
   display: flex;
@@ -64,7 +64,8 @@ const Wrapper = styled.section`
 const Text = styled.h2`
   font-family: var(--hl-font);
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin: -5px 0 15px 0;
+  text-align: center;
   &.active {
     color: var(--signal-color1);
   }
@@ -77,9 +78,10 @@ const NavigationLink = styled(NavLink)`
   color: black;
   font-family: var(--hl-font);
   font-size: 0.9rem;
-  margin-bottom: 5px;
-  padding: 5px;
-  width: 170px;   
+  margin-bottom: 7px;
+  padding-top: 9px;
+  text-align: center;
+  width: 190px;   
   min-height: 35px; 
   background-color: transparent;
   background-image: linear-gradient(to bottom, #fff, #f8eedb);
