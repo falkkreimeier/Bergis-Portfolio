@@ -5,10 +5,6 @@ function Quote() {
   return (
     <Wrapper>
       <Image src={QuoteImg} alt="" />
-      {/* <Headline>
-        Eine Kamera schafft Distanz zu den Menschen, die sie betrachtet. Der
-        Mensch dahinter hat zur Aufgabe diese aufzulösen.
-      </Headline> */}
     </Wrapper>
   );
 }
