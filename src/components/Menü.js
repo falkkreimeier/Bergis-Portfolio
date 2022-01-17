@@ -6,7 +6,7 @@ function Menü({ onMenüButtonClick }) {
     <Wrapper>
       <Text>Inhalt</Text>
       <NavigationLink
-        onSubmit={onMenüButtonClick}
+        onClick={onMenüButtonClick}
         to="/"
         activeclassname="active"
       >
