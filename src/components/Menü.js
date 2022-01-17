@@ -79,7 +79,8 @@ const NavigationLink = styled(NavLink)`
   font-size: 0.9rem;
   margin-bottom: 5px;
   padding: 5px;
-  width: 170px;    
+  width: 170px;   
+  min-height: 35px; 
   background-color: transparent;
   background-image: linear-gradient(to bottom, #fff, #f8eedb);
   border: 0 solid #e5e7eb;
