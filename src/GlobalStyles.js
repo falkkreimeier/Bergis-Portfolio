@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
 --secondary-color1: #FFFFFF;
 --tertiary-color:
 --signal-color1: #F2C53D;
---body-color: black;
+--body-color: BLACK;
 
 --hl-font: 'Roboto', sans-serif;
 --main-font: 'Roboto', sans-serif;

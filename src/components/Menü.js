@@ -49,19 +49,6 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   z-index: 30;
-  animation-duration: 0.5s;
-  animation-name: slideIn;
-  &.active {
-    @keyframes slideIn {
-      from {
-        transform: translatex(100px);
-      }
-
-      to {
-        transform: translateY(0);
-      }
-    }
-  }
 `;
 
 const Text = styled.h2`

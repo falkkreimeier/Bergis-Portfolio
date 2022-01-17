@@ -21,7 +21,7 @@ const Wrapper = styled.section`
   padding: 0;
 `;
 const Image = styled.img`
-  height: 260px;
+  height: 165px;
 `;
 
 export default Quote;
