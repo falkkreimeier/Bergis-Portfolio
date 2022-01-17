@@ -40,7 +40,7 @@ function Menü({ onMenüButtonClick }) {
 const Wrapper = styled.section`
   border-radius: 20px 0 0 20px;
   background-color: var(--primary-color);
-  padding: 10px;
+  padding: 30px 30px;
   position: relative;
   width: 220px;
   height: 250px;
@@ -58,12 +58,11 @@ const Text = styled.h2`
 `;
 
 const NavigationLink = styled(NavLink)`
-  padding-right: 10px;
   margin-top: 20px;
   text-decoration: none;
   font-family: var(--hl-font)
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: black;
   &.active {
     text-decoration: underline;
