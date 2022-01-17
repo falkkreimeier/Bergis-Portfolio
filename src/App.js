@@ -32,7 +32,7 @@ function App() {
   return (
     <Wrapper>
       <Header showMenü={showMenü} onMenüButtonClick={MenüButtonClick} />
-      <Main>
+      <Main onClick={NaviButtonClick}>
         <Routes>
           <Route
             path="/"
