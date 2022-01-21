@@ -39,9 +39,7 @@ function App() {
             element={
               <>
                 <Quote />
-                {data.poster.map((poster) => (
-                  <Documentary image={poster.image} key={poster.id} />
-                ))}
+                <Documentary />
               </>
             }
           />
