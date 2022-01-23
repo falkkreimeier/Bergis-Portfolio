@@ -9,7 +9,6 @@ import Camera from "./components/Camera";
 import Quote from "./components/Quote";
 import Mediaeducation from "./components/Mediaeducation";
 import { Routes, Route, useLocation } from "react-router-dom";
-import data from "./data.json";
 import { useEffect, useState } from "react";
 
 function App() {
