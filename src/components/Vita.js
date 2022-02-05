@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import profile from "../Assets/Sebastian.jpg";
+import profile from "../Assets/Plakate/Sebastian.jpg";
 
 function Vita() {
   return (

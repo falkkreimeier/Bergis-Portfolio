@@ -1,9 +1,9 @@
 import styled from "styled-components/macro";
-import plakat1 from "../Assets/Plakat1.jpg";
-import plakat2 from "../Assets/Plakat2.jpg";
-import plakat3 from "../Assets/Plakat3.jpg";
-import plakat4 from "../Assets/Plakat4.jpg";
-import plakat5 from "../Assets/Plakat5.jpg";
+import plakat1 from "../Assets/Plakate/Plakat1.jpg";
+import plakat2 from "../Assets/Plakate/Plakat2.jpg";
+import plakat3 from "../Assets/Plakate/Plakat3.jpg";
+import plakat4 from "../Assets/Plakate/Plakat4.jpg";
+import plakat5 from "../Assets/Plakate/Plakat5.jpg";
 
 function Documentary() {
   return (

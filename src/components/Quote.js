@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import QuoteImg from "../Assets/Quote.jpg";
+import QuoteImg from "../Assets/Plakate/Quote.jpg";
 
 function Quote() {
   return (

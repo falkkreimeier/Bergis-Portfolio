@@ -25,10 +25,14 @@ html {
  }
 
  p {
+    font-family: 'Roboto', sans-serif;
      line-height: 1.5;
+     padding-left: 10px;
  }
 
  h2 {
+     text-align: center;
+     font-family: 'Roboto', sans-serif;
      letter-spacing: 0.8px;
  }
 
