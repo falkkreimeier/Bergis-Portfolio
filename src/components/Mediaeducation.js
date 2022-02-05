@@ -6,6 +6,8 @@ import ImageImg3 from "../Assets/Medienpädagoge/logo(1).png";
 function MediaEducation() {
   return (
     <Wrapper>
+      <h2>Project Name</h2>
+      <p>Netter Text über das Projekt max 5 Zeilen</p>
       <div>
         <Image src={ImageImg3} alt="" />
       </div>

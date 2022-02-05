@@ -1,10 +1,9 @@
-import styled from "styled-components/macro";
 import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
 function Menü({ onMenüButtonClick }) {
   return (
     <Wrapper>
-      <Text>Inhalt</Text>
       {window.location.pathname === "/documentary" ? (
         <NavigationLinkActive
           onClick={onMenüButtonClick}
