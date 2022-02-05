@@ -8,24 +8,28 @@ function MediaEducation() {
     <Wrapper>
       <h2>Project Name</h2>
       <p>Netter Text über das Projekt max 5 Zeilen</p>
-      <div>
+      <ImageContainer>
         <Image src={ImageImg3} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg1} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg2} alt="" />
-      </div>
+      </ImageContainer>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.section``;
 
+const ImageContainer = styled.div`
+  display: flex;
+`;
+
 const Image = styled.img`
-  width: 375px;
-  margin: 10px auto;
+  width: 360px;
+  margin: 5px auto;
   object-fit: contain;
 `;
 

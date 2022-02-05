@@ -19,60 +19,64 @@ function Camera() {
     <Wrapper>
       <h2>Kurzfilm: Ich auch</h2>
       <p>Netter Text zum Projekt. Maximal 5 Zeilen</p>
-      <div>
+      <ImageContainer>
         <Image src={ImageImg1} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg2} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg3} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg4} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg5} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg6} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg7} alt="" />
-      </div>
+      </ImageContainer>
       <h2>Kurzfilm: Helden der Großstadt</h2>
       <p>Netter Text zum Projekt. Maximal 5 Zeilen</p>
-      <div>
+      <ImageContainer>
         <Image src={ImageImg8} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg9} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg11} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg12} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg13} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg14} alt="" />
-      </div>
-      <div>
+      </ImageContainer>
+      <ImageContainer>
         <Image src={ImageImg15} alt="" />
-      </div>
+      </ImageContainer>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.section``;
 
+const ImageContainer = styled.div`
+  display: flex;
+`;
+
 const Image = styled.img`
-  width: 375px;
+  width: 360px;
   object-fit: contain;
-  margin: 10px auto;
+  margin: 5px auto;
 `;
 
 export default Camera;
