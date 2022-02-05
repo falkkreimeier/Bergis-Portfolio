@@ -60,16 +60,6 @@ const Wrapper = styled.section`
   z-index: 30;
 `;
 
-const Text = styled.h2`
-  font-family: var(--hl-font);
-  font-size: 1.2rem;
-  margin: -5px 0 15px 0;
-  text-align: center;
-  &.active {
-    color: var(--signal-color1);
-  }
-`;
-
 const NavigationLink = styled(NavLink)`
   text-decoration: none;
   font-family: var(--hl-font)
