@@ -4,14 +4,10 @@ import plakat2 from "../Assets/Plakate/Plakat2.jpg";
 import plakat3 from "../Assets/Plakate/Plakat3.jpg";
 import plakat4 from "../Assets/Plakate/Plakat4.jpg";
 import plakat5 from "../Assets/Plakate/Plakat5.jpg";
-import plakat6 from "../Assets/Plakate/poster-kurzfilms-nenn-mich-nicht-bruder.jpg";
 
 function Documentary() {
   return (
     <Wrapper>
-      <div>
-        <Image5 src={plakat6} alt="" />
-      </div>
       <div>
         <Image5 src={plakat5} alt="" />
       </div>

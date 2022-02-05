@@ -13,6 +13,9 @@ import ImageImg1 from "../Assets/Ich auch Kamera/Bildschirmfoto 2021-10-19 um 10
 import ImageImg5 from "../Assets/Ich auch Kamera/Bildschirmfoto 2021-10-19 um 10.27.07(1).png";
 import ImageImg6 from "../Assets/Ich auch Kamera/Bildschirmfoto 2021-10-19 um 10.28.10(1).png";
 import ImageImg7 from "../Assets/Ich auch Kamera/Bildschirmfoto 2021-10-19 um 10.29.42(1).png";
+import ImageImg18 from "../Assets/Nenn mich nicht Bruder/ascheplatz-c2a9sebastian-bergfeld.jpg";
+import ImageImg17 from "../Assets/Nenn mich nicht Bruder/cheyenne-c2a9sebastian-bergfeld(1).jpg";
+import ImageImg16 from "../Assets/Nenn mich nicht Bruder/poster-kurzfilms-nenn-mich-nicht-bruder.jpg";
 
 function Camera() {
   return (
@@ -62,6 +65,17 @@ function Camera() {
       </ImageContainer>
       <ImageContainer>
         <Image src={ImageImg15} alt="" />
+      </ImageContainer>
+      <h2>Kurzfilm: Nenn mich nicht Bruder</h2>
+      <p>Netter Text zum Projekt. Maximal 5 Zeilen</p>
+      <ImageContainer>
+        <Image src={ImageImg16} alt="" />
+      </ImageContainer>
+      <ImageContainer>
+        <Image src={ImageImg17} alt="" />
+      </ImageContainer>
+      <ImageContainer>
+        <Image src={ImageImg18} alt="" />
       </ImageContainer>
     </Wrapper>
   );

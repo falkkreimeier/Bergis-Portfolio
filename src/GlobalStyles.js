@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
 --secondary-color1: #FFFFFF;
 --tertiary-color:
 --signal-color1: #4666FF;
---body-color: BLACK;
+--body-color: grey;
 
 --hl-font: 'Roboto', sans-serif;
 --main-font: 'Roboto', sans-serif;
@@ -34,7 +34,7 @@ html {
      text-transform: uppercase;
      text-align: center;
      font-family: 'Roboto', sans-serif;
-     letter-spacing: 0.8px;
+     letter-spacing: 0.7px;
  }
 
  body {
