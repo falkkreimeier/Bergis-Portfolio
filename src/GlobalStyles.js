@@ -31,6 +31,7 @@ html {
  }
 
  h2 {
+     text-transform: uppercase;
      text-align: center;
      font-family: 'Roboto', sans-serif;
      letter-spacing: 0.8px;

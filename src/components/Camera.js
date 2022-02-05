@@ -18,7 +18,7 @@ function Camera() {
   return (
     <Wrapper>
       <h2>Kurzfilm: Ich auch</h2>
-      <p>Netter Text zum Projekt. Maximal 3 Zeilen</p>
+      <p>Netter Text zum Projekt. Maximal 5 Zeilen</p>
       <div>
         <Image src={ImageImg1} alt="" />
       </div>
@@ -41,7 +41,7 @@ function Camera() {
         <Image src={ImageImg7} alt="" />
       </div>
       <h2>Kurzfilm: Helden der Großstadt</h2>
-      <p>Netter Text zum Projekt. Maximal 3 Zeilen</p>
+      <p>Netter Text zum Projekt. Maximal 5 Zeilen</p>
       <div>
         <Image src={ImageImg8} alt="" />
       </div>
