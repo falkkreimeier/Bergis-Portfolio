@@ -69,7 +69,7 @@ function Camera() {
       <h2>Kurzfilm: Nenn mich nicht Bruder</h2>
       <p>Netter Text zum Projekt. Maximal 5 Zeilen</p>
       <ImageContainer>
-        <Image src={ImageImg16} alt="" />
+        <Poster src={ImageImg16} alt="" />
       </ImageContainer>
       <ImageContainer>
         <Image src={ImageImg17} alt="" />
@@ -87,9 +87,16 @@ const ImageContainer = styled.div`
   display: flex;
 `;
 
+const Poster = styled.img`
+  width: 360px;
+  object-fit: cover;
+  margin: 5px auto;
+`;
+
 const Image = styled.img`
   width: 360px;
-  object-fit: contain;
+  height: 200px;
+  object-fit: cover;
   margin: 5px auto;
 `;
 
