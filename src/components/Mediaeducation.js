@@ -7,7 +7,10 @@ function MediaEducation() {
   return (
     <Wrapper>
       <h2>Project Name</h2>
-      <p>Netter Text über das Projekt max 5 Zeilen</p>
+      <p>
+        Netter Text über das Projekt, der kann auch was länger sein, und
+        vielleicht noch was zu den einzelnen Bildern sagen.{" "}
+      </p>
       <ImageContainer>
         <Image src={ImageImg3} alt="" />
       </ImageContainer>
@@ -30,7 +33,8 @@ const ImageContainer = styled.div`
 const Image = styled.img`
   width: 360px;
   margin: 5px auto;
-  object-fit: contain;
+  height: 200px;
+  object-fit: cover;
 `;
 
 export default MediaEducation;
